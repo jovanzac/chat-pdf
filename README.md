@@ -1,0 +1,2 @@
+## About
+A rag implementation meant to enable "conversation with a pdf file". When a user uploads a pdf file, it is parsed to extract the text which is then split into chunks, tokenized, and stored in a vector database (here FAISS has been used). The user's query is also tokenized and compared with the contents of the vector db and the most similar chunks are then returned. These chunks are then structured by an llm (here I use Google's 2 billion parameter Gemma model).
